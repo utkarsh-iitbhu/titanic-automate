@@ -1,0 +1,17 @@
+# Include all YAML configuration files
+include config/*.yaml
+
+# Include README and LICENSE files
+include README.md
+include LICENSE
+
+# Include all Python files in the 'titanic' and 'tests' directories
+recursive-include titanic *.py
+recursive-include tests *.py
+
+# Include any additional data files (if applicable)
+recursive-include data *.txt
+
+# Exclude unnecessary files like compiled Python files or backups
+global-exclude *.pyc
+global-exclude *~
